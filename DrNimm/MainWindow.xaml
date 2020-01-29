@@ -1,0 +1,21 @@
+﻿<Window x:Class="DrNimm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrNimm"
+        mc:Ignorable="d"
+        Title="Dr.Nimm" Height="800" Width="1000">
+    <Grid>
+        <StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Width="200" Height="100" FontSize="50" Click="Button_Nimm1">Nimm 1</Button>
+                <Button Width="200" Height="100" FontSize="50" Click="Button_Nimm2">Nimm 2</Button>
+                <Button Width="200" Height="100" FontSize="50" Click="Button_Nimm3">Nimm 3</Button>
+                <ProgressBar VerticalAlignment="Center" Width="200" Height="25" x:Name="AIProgress"></ProgressBar>
+            </WrapPanel>
+            <WrapPanel x:Name="MatchContainer" HorizontalAlignment="Center" Width="800" Height="600">                
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
